@@ -1,7 +1,0 @@
-Mastodon.py
-kafka-python
-pyspark
-langdetect
-pandas
-matplotlib
-seaborn

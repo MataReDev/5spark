@@ -25,11 +25,7 @@ docker exec -it jupyterContainer jupyter notebook list
 ```
 
 ### Installation des dépendances Python
-Avant de pouvoir exécuter les notebooks Jupyter, vous devez installer toutes les dépendances Python nécessaires. Utilisez le fichier requirements.txt fourni pour installer ces dépendances :
-
-```bash
-pip install -r requirements.txt
-```
+Avant de pouvoir exécuter les notebooks Jupyter, vous devez installer toutes les dépendances Python nécessaires. Utilisez le fichier Part0.ipynb fourni pour installer ces dépendances :
 Cela installera toutes les bibliothèques requises, y compris PySpark, Kafka, Mastodon.py, et les bibliothèques pour l'analyse de données.
 
 ### Exécution des notebooks
