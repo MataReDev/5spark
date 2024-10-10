@@ -3,12 +3,21 @@
 Ce projet vise à analyser les données de Mastodon en temps réel et à effectuer une analyse de sentiments à l'aide de Spark, Kafka, et PostgreSQL. Les résultats sont visualisés avec des bibliothèques Python comme Matplotlib et Seaborn.
 
 ## Prérequis
-1. Docker
-2. Docker Compose
-3. Python 3.x
-4. Java (pour PySpark)
+1. Mastodon
+2. Docker
+3. Docker Compose
+4. Python 3.x
+5. Java (pour PySpark)
 
 ## Installation
+### Créer application sur Mastodon
+
+Aller sur ce site : [Nouvelle Mastodon Application](https://mastodon.social/settings/applications/new)
+Mettez vos préférence pour les droits de l'API (De préférence admin:read)
+
+Récupérer le token et remplacer le dans le Part1.
+
+
 ### Lancer les conteneurs Docker
 Le fichier docker-compose.yml est utilisé pour configurer et lancer les services nécessaires, notamment Kafka, Zookeeper, PostgreSQL et Spark.
 
