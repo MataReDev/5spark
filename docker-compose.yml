@@ -8,12 +8,12 @@ services:
     restart: unless-stopped
 
   kafka:
-    image: wurstmeister/kafka
+    image: wurstmeister/kafka:latest
     ports:
       - "9092:9092"
     environment:
       DOCKER_API_VERSION: 1.46
-      KAFKA_ADVERTISED_HOST_NAME: 192.168.1.24
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.1.10
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     networks:
       - kafka-network
