@@ -33,6 +33,11 @@ Une fois les services Docker lancés, vous pouvez récupérer le token Jupyter e
 docker exec -it jupyterContainer jupyter notebook list
 ```
 
+### Créer le topic dans kafka
+```bash
+kafka-topics.sh --create --topic mastodonstream --bootstrap-server 192.168.1.10:9092 --partitions 3 --replication-factor 1
+```
+
 ### Installation des dépendances Python
 Avant de pouvoir exécuter les notebooks Jupyter, vous devez installer toutes les dépendances Python nécessaires. Utilisez le fichier Part0.ipynb fourni pour installer ces dépendances :
 Cela installera toutes les bibliothèques requises, y compris PySpark, Kafka, Mastodon.py, et les bibliothèques pour l'analyse de données.
